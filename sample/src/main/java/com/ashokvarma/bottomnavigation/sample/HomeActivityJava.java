@@ -3,6 +3,10 @@ package com.ashokvarma.bottomnavigation.sample;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -16,15 +20,10 @@ import android.widget.CompoundButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.ashokvarma.bottomnavigation.BottomNavigationBar;
 import com.ashokvarma.bottomnavigation.BottomNavigationItem;
 import com.ashokvarma.bottomnavigation.ShapeBadgeItem;
 import com.ashokvarma.bottomnavigation.TextBadgeItem;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 
 /**
  * Class description
@@ -53,12 +52,12 @@ public class HomeActivityJava extends AppCompatActivity implements View.OnClickL
 
     int lastSelectedPosition = 0;
 
-    TextFragment fragment1;
-    TextFragment fragment2;
-    TextFragment fragment3;
-    TextFragment fragment4;
-    TextFragment fragment5;
-    TextFragment fragment6;
+    TextFragmentJava fragment1;
+    TextFragmentJava fragment2;
+    TextFragmentJava fragment3;
+    TextFragmentJava fragment4;
+    TextFragmentJava fragment5;
+    TextFragmentJava fragment6;
 
     @Nullable
     TextBadgeItem numberBadgeItem;
@@ -85,12 +84,12 @@ public class HomeActivityJava extends AppCompatActivity implements View.OnClickL
 
         message = findViewById(R.id.message);
 
-        fragment1 = TextFragmentKt.newTextFragmentInstance(getString(R.string.para1));
-        fragment2 = TextFragmentKt.newTextFragmentInstance(getString(R.string.para2));
-        fragment3 = TextFragmentKt.newTextFragmentInstance(getString(R.string.para3));
-        fragment4 = TextFragmentKt.newTextFragmentInstance(getString(R.string.para4));
-        fragment5 = TextFragmentKt.newTextFragmentInstance(getString(R.string.para5));
-        fragment6 = TextFragmentKt.newTextFragmentInstance(getString(R.string.para6));
+        fragment1 = TextFragmentJava.newInstance(getString(R.string.para1));
+        fragment2 = TextFragmentJava.newInstance(getString(R.string.para2));
+        fragment3 = TextFragmentJava.newInstance(getString(R.string.para3));
+        fragment4 = TextFragmentJava.newInstance(getString(R.string.para4));
+        fragment5 = TextFragmentJava.newInstance(getString(R.string.para5));
+        fragment6 = TextFragmentJava.newInstance(getString(R.string.para6));
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, new String[]{"MODE_DEFAULT", "MODE_FIXED", "MODE_SHIFTING", "MODE_FIXED_NO_TITLE", "MODE_SHIFTING_NO_TITLE"});
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
