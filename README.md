@@ -29,7 +29,9 @@ Download [the latest JAR][mavenAarDownload] or grab via Maven:
 
 Gradle:
 ```groovy
-implementation ''com.github.tomxukui:bottom-navigation-bar:2.2.0'
+implementation 'com.github.tomxukui:bottom-navigation-bar:2.2.0'
+implementation 'com.android.support:appcompat-v7:28.0.0'
+implementation 'com.android.support:design:28.0.0'
 ```
 
 ## For Usage Docs [Visit Wiki][wikiLink]
