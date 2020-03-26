@@ -27,7 +27,7 @@ Based on your IDE you can import library in one of the following ways
 
 Download [the latest JAR][mavenAarDownload] or grab via Maven:
 
-or Gradle:
+Gradle:
 ```groovy
 implementation ''com.github.tomxukui:bottom-navigation-bar:2.2.0'
 ```
