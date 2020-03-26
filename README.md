@@ -27,17 +27,9 @@ Based on your IDE you can import library in one of the following ways
 
 Download [the latest JAR][mavenAarDownload] or grab via Maven:
 
-```xml
-<dependency>
-  <groupId>com.ashokvarma.android</groupId>
-  <artifactId>bottom-navigation-bar</artifactId>
-  <version>2.2.0</version>
-  <type>pom</type>
-</dependency>
-```
 or Gradle:
 ```groovy
-implementation 'com.ashokvarma.android:bottom-navigation-bar:2.2.0'
+implementation ''com.github.tomxukui:bottom-navigation-bar:2.2.0'
 ```
 or Ivy:
 ```xml
