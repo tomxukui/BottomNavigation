@@ -31,12 +31,6 @@ or Gradle:
 ```groovy
 implementation ''com.github.tomxukui:bottom-navigation-bar:2.2.0'
 ```
-or Ivy:
-```xml
-<dependency org='com.ashokvarma.android' name='bottom-navigation-bar' rev='2.2.0'>
-  <artifact name='$AID' ext='pom'/>
-</dependency>
-```
 
 ## For Usage Docs [Visit Wiki][wikiLink]
 
